@@ -2,8 +2,10 @@
 
 In `kadmin`:
 
-`addprinc -maxlife 5min -maxrenewlife 10min -randkey renewal1`
-`xst -k /path/to/renewal1.headless.keytab renewal1`
+```
+addprinc -maxlife 5min -maxrenewlife 10min -randkey renewal1
+xst -k /path/to/renewal1.headless.keytab renewal1
+```
 
 Ensure that the `krbtgt/REALM` realm has a non-zero maximum renewable lifetime:
 
