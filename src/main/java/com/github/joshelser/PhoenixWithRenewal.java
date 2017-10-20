@@ -29,7 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
  /**
-  * The ticket's lifetime is 10 minutes with a 15 minute renewal lifetime.
+  * The ticket's lifetime is 5 minutes with a 10 minute renewal lifetime.
   * The expectation is that after the 2nd query, we'll expire the 10min lifetime and rely on
   * the renewal thread to acquire a new ticket. If we continuously interact with Phoenix,
   * the HBase RPC layer will automatically renew the ticket for us. So, if we query Phoenix
